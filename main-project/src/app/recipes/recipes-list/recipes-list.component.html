@@ -6,9 +6,11 @@
 <hr>
 <div class="row"> 
     <div class="com-xs-12 com-md-12">
-        <app-recipe-item *ngFor="let recipeEl of recipes"
+        <!-- <app-recipe-item *ngFor="let recipeEl of recipes"
         [recipe]="recipeEl"
-        (recipeSelected)="onRecipeSelected(recipeEl)"></app-recipe-item>     
+        (recipeSelected)="onRecipeSelected(recipeEl)"></app-recipe-item>      -->
+        <app-recipe-item *ngFor="let recipeEl of recipes"
+        [recipe]="recipeEl"></app-recipe-item>
     </div>  
     <!-- sending(binding) property to app-recipe-item [recipe] and each iteretion "recipeEl" -->
     <!-- повторяем отправление из recipeList в Recipes и добавляем в onRecipeSelected определение какой именно компонент отсылаем -->
