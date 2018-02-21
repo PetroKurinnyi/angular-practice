@@ -1,0 +1,10 @@
+{
+    "Title": "Приклад перекладу",
+    "Intro": "Привіт я {{ name }} і мені {{ age }} роки.",
+    "Startpage": {
+        "TranslationSections": "Привіт світ!"
+    },
+     "Aboutpage": {
+        "TranslationSections": "Ми завантажуемося"
+    }
+}
