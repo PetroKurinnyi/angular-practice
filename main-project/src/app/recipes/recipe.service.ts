@@ -15,7 +15,8 @@ export class RecipeService {
         new Ingredient('Orange', 2),
         new Ingredient('Banana', 3),
         new Ingredient('Grapefruit', 1)
-      ]),
+      ]
+    ),
     new Recipe(
       'Borsh',
       'Red ukranian soup',
@@ -26,19 +27,21 @@ export class RecipeService {
         new Ingredient('Totatous', 2),
         new Ingredient('Beet', 2),
         new Ingredient('Water', 3)
-      ])
+      ]
+    )
   ];
-  constructor(private shoppingListService: ShoppingListService) { }
+  constructor(private shoppingListService: ShoppingListService) {}
   public recipeSelected = new EventEmitter<Recipe>();
 
   getRecipes() {
     return this.recipes.slice();
   }
 
+  getRecipe(index: number) {
+    return this.recipes[index];
+  }
+
   addIngredientsToShoppingList(ingredints: Ingredient[]) {
     this.shoppingListService.addIngredients(ingredints);
   }
-
-
-
 }
